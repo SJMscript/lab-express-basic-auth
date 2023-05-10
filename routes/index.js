@@ -5,4 +5,7 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
+const signupRouter = require("./signup.routes.js"); 
+router.use("/auth", signupRouter);
+
 module.exports = router;

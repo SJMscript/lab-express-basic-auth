@@ -1,0 +1,25 @@
+<div>
+
+    <h3>Sign Up</h3>
+
+    <form action="/auth/signup" method="post">
+    
+        <label for="username">Username</label>
+        <input type="text" name="username">
+
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password">
+
+        <br>
+
+        <button>Registrate</button>
+
+        {{#if this.errorMessage}}
+        <p style="color: blue;">{{errorMessage}}</p>
+        {{/if}}
+
+    </form>
+
+</div>
